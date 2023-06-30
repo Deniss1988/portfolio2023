@@ -1,0 +1,39 @@
+.phone__image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+  }
+  
+  #phones {
+    transform: translateY(-50px);
+    height: 548px;
+  }
+  
+  .how {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .phone__title {
+    font-size: 2.75rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .line {
+    border: 1px solid #E4E4E4;
+    width: 80%;
+    margin: 40px auto;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .how {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+  
