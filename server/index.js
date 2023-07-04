@@ -8,7 +8,7 @@ const port = 8081;
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: ["http://127.0.0.1:5173", "http://localhost:5173", "https://dmijusovs-food-app.netlify.app/"],
+    origin: ["https://dmijusovs-food-app.netlify.app/:80"],
   })
 );
 app.use(express.static(`${__dirname}/static`));
