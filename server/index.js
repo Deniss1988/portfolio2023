@@ -8,7 +8,7 @@ const port = 8081;
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: ["https://dmijusovs-food-app.netlify.app/:80"],
+    origin: ["https://dmijusovs-food-app.netlify.app"],
   })
 );
 app.use(express.static(`${__dirname}/static`));
@@ -33,6 +33,6 @@ app.post("/", (req, res) => {
   }
 });
 
-app.listen(port, () => {
+app.listen(process.env.port || port, () => {
   console.log(`Server listening on port ${port}`);
 });
