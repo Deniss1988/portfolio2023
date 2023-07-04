@@ -14,7 +14,7 @@ function FormBlock() {
 
   const onSubmit = (data) => {
     console.log(data);
-    const apiUrl = "https://food-app-ks8h.onrender.com/:8081";
+    const apiUrl = "https://food-app-ks8h.onrender.com";
     fetch(apiUrl, {
       headers: {
         Accept: "application/json",
