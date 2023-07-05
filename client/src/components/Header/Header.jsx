@@ -14,14 +14,10 @@ const Header = () => {
 
   return (
     <div className="header">
-      <div className="menu">
-        <BurgerMenu />
-      </div>
       <nav className="navbar">
         <Link to={"/"}>
           <img className="logo" src={Logo} alt="Company Logo" />
         </Link>
-
         <div className="menu-items">
           {menuItems.map((item) => (
             <NavLink className="menu-item" key={item.label} to={item.link}>
@@ -30,6 +26,9 @@ const Header = () => {
           ))}
         </div>
       </nav>
+      <div className="menu">
+        <BurgerMenu />
+      </div>
     </div>
   );
 };
