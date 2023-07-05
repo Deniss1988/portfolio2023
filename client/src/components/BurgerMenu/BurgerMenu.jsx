@@ -1,4 +1,4 @@
-import { stack as Menu } from "react-burger-menu";
+import { slide as Menu } from "react-burger-menu";
 import { NavLink } from "react-router-dom";
 import "./BurgerMenu.css";
 
