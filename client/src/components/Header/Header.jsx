@@ -13,25 +13,23 @@ const Header = () => {
   ];
 
   return (
-    <div>
+    <div className="header">
       <div className="menu">
         <BurgerMenu />
       </div>
-      <div className="header">
-        <nav className="navbar">
-          <Link to={"/"}>
-            <img className="logo" src={Logo} alt="Company Logo" />
-          </Link>
+      <nav className="navbar">
+        <Link to={"/"}>
+          <img className="logo" src={Logo} alt="Company Logo" />
+        </Link>
 
-          <div className="menu-items">
-            {menuItems.map((item) => (
-              <NavLink className="menu-item" key={item.label} to={item.link}>
-                {item.label}
-              </NavLink>
-            ))}
-          </div>
-        </nav>
-      </div>
+        <div className="menu-items">
+          {menuItems.map((item) => (
+            <NavLink className="menu-item" key={item.label} to={item.link}>
+              {item.label}
+            </NavLink>
+          ))}
+        </div>
+      </nav>
     </div>
   );
 };
