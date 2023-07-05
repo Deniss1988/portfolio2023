@@ -1,10 +1,12 @@
 import Construction from "../../assets/under.svg";
-import "./About.css"
+import "./About.css";
 
 function About() {
   return (
-    <img src={Construction} alt="Construction" />
-  )
+    <div className="about">
+      <img src={Construction} alt="Construction" />
+    </div>
+  );
 }
 
-export default About
+export default About;
