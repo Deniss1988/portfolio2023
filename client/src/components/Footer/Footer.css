@@ -8,19 +8,22 @@
 }
 
 .footer__logo {
-  height: 4rem;
-  width: auto;
+  width: 200px;
+}
+
+.logo-small {
+  width: 120px;
 }
 
 .footer__social {
   display: flex;
   align-items: center;
+  gap: 30px;
 }
 
 .footer__social a {
   color: var(--primary);
   text-decoration: none;
-  margin-right: 1rem;
   font-size: 1.5rem;
   transition: color 0.3s ease-in-out;
 }
@@ -40,6 +43,7 @@
 .footer__desktop {
   color: var(--secondary);
   margin-right: 10px;
+  width: 200px;
 }
 
 .footer__mobile {

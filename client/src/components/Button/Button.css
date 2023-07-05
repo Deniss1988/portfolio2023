@@ -13,12 +13,12 @@
 .button.primary {
   color: var(--white);
   background-color: var(--primary);
-  border: 1px solid var(--primary);
+  border: 1px solid var(--white);
 }
 
 .button.primary:hover {
-  background-color: var(--secondary);
-  border: 1px solid var(--secondary);
+  background-color: var(--tetriary);
+  border: 1px solid var(--white);
 }
 
 .button.secondary {

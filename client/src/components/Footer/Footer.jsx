@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { FaFacebookSquare, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
-import Logo from "../../assets/logo.svg";
+import {
+  FaFacebookSquare,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedin,
+} from "react-icons/fa";
+import Logo from "../../assets/img/logo.png";
 import "./Footer.css";
 
 const Footer = () => {
@@ -20,7 +25,9 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-      <img className="footer__logo" src={Logo} alt="Logo" />
+      <div className="footer__logo">
+        <img className="logo-small" src={Logo} alt="Logo" />
+      </div>
       <div className="footer__social">
         <a href="https://www.twitter.com" rel="noopener noreferrer">
           <FaTwitter />
@@ -29,17 +36,27 @@ const Footer = () => {
           <FaFacebookSquare />
         </a>
         {isMobile ? (
-          <a className="footer__social-icon linkedin" href="https://www.linkedin.com" rel="noopener noreferrer">
+          <a
+            className="footer__social-icon linkedin"
+            href="https://www.linkedin.com"
+            rel="noopener noreferrer"
+          >
             <FaLinkedin />
           </a>
         ) : (
-          <a className="footer__social-icon instagram" href="https://www.instagram.com" rel="noopener noreferrer">
+          <a
+            className="footer__social-icon instagram"
+            href="https://www.instagram.com"
+            rel="noopener noreferrer"
+          >
             <FaInstagram />
           </a>
         )}
       </div>
       {isMobile ? (
-        <p className="footer__mobile">Just type what's on your mind and we'll</p>
+        <p className="footer__mobile">
+          Just type what's on your mind and we'll
+        </p>
       ) : (
         <div className="footer__desktop">
           Copyright &copy; {new Date().getFullYear()} Bella Onojie.com

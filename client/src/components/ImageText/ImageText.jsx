@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "./ImageTextLayout.css";
+import "./ImageText.css";
 
 const ImageTextLayout = ({
   imageSrc,

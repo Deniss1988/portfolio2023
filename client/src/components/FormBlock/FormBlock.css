@@ -4,15 +4,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../../assets/Download_app.png);
+  background-image: url(../../assets/img/download.webp);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 20px 0;;
+  padding: 60px 0;;
 }
 
 .contact-us__input,
 .contact-us__input-area {
-  width: 400px;
+  width: 350px;
   font-size: 20px;
   border-radius: 30px;
   outline: none;
