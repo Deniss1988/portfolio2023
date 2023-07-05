@@ -18,7 +18,7 @@
 .footer__social {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 .footer__social a {
@@ -48,6 +48,7 @@
 
 .footer__mobile {
   color: var(--secondary);
+  margin: 20px 0;
 }
 
 @media only screen and (max-width: 767px) {
