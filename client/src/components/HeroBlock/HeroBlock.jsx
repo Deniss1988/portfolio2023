@@ -23,7 +23,6 @@ const HeroBlock = () => {
   return (
     <div className="hero-block">
       <div className="hero-block__content">
-        <h3 className="hero-block__description">Deniss Mijusovs</h3>
         <h1 className="hero-block__title">
           Welcome to my portfolio. </h1>
         <p className="hero-block__description">

@@ -13,7 +13,7 @@
 .hero-block__content {
   color: var(--white);
   text-align: center;
-  margin: 2rem;
+  margin: 6rem 2rem 2rem;
 }
 
 .hero-block__title {
