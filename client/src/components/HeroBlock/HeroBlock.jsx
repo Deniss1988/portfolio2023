@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import Button from "../Button/Button";
+import { Link } from 'react-router-dom';
 import "./HeroBlock.css";
 
 const HeroBlock = () => {
@@ -22,34 +23,38 @@ const HeroBlock = () => {
   return (
     <div className="hero-block">
       <div className="hero-block__content">
-        <h3 className="hero-block__description">Food App</h3>
+        <h3 className="hero-block__description">Deniss Mijusovs</h3>
         <h1 className="hero-block__title">
-          Why stay hungry when you can order form Bella Onojie
-        </h1>
+          Welcome to my portfolio. </h1>
         <p className="hero-block__description">
-          Download the bella onojes food app now on
+          Check out my work below and feel free to get in touch!
         </p>
         <div className="hero-block__buttons">
-          <Button
-            variant="primary"
-            onClick={() => console.log("Primary button clicked")}
-          >
-            Playstore
-          </Button>
+          <Link to="/portfolio">
+            <Button
+              variant="primary"
+              onClick={() => console.log("Primary button clicked")}
+            >
+              Portfolio
+            </Button>
+          </Link>
           {isMobile ? (
-            <Button
-              variant="mobile"
-              onClick={() => console.log("Mobile button clicked")}
-            >
-              App Store
-            </Button>
+            <Link to="/about">
+              <Button
+                variant="mobile"
+                onClick={() => console.log("Mobile button clicked")}
+              >
+                About Me
+              </Button>
+            </Link>
           ) : (
-            <Button
-              variant="secondary"
-              onClick={() => console.log("Secondary button clicked")}
-            >
-              App Store
-            </Button>
+            <Link to="/about">
+              <Button
+                variant="secondary"
+                onClick={() => console.log("Secondary button clicked")}
+              >
+                About Me
+              </Button></Link>
           )}
         </div>
       </div>
