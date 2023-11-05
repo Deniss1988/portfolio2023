@@ -3,8 +3,8 @@
   position: fixed;
   width: 30px;
   height: 25px;
-  right: 13%;
-  top: 55px;
+  right: 30px;
+  top: 35px;
 }
 
 /* Color/shape of burger icon bars */
@@ -14,8 +14,7 @@
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: var(--white);
-  opacity: 1 !important;
+  background: var(--secondary);
 }
 
 /* Position and sizing of clickable cross button */

@@ -1,9 +1,10 @@
+import Construction from "../../assets/under.svg";
 import "./About.css";
 
 function About() {
   return (
     <div className="about">
-      About
+      <img src={Construction} alt="Construction" />
     </div>
   );
 }

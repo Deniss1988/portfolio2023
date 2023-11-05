@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import {
   FaFacebookSquare,
+  FaTwitter,
   FaInstagram,
   FaLinkedin,
 } from "react-icons/fa";
-import Twitter from "../../assets/img/social/twitter.svg"
 import Logo from "../../assets/img/logo.png";
 import "./Footer.css";
 
@@ -30,7 +30,7 @@ const Footer = () => {
       </div>
       <div className="footer__social">
         <a href="https://www.twitter.com" rel="noopener noreferrer">
-         <img className="social" src={Twitter} alt="twitter logo" />
+          <FaTwitter />
         </a>
         <a href="https://www.facebook.com" rel="noopener noreferrer">
           <FaFacebookSquare />
@@ -55,11 +55,11 @@ const Footer = () => {
       </div>
       {isMobile ? (
         <p className="footer__mobile">
-          &copy; {new Date().getFullYear()} mijusovs.lv
+          Just type what's on your mind and we'll
         </p>
       ) : (
         <div className="footer__desktop">
-          Copyright &copy; {new Date().getFullYear()} mijusovs.lv
+          Copyright &copy; {new Date().getFullYear()} Bella Onojie.com
         </div>
       )}
     </footer>

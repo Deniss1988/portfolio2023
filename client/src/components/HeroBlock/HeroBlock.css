@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   min-height: 600px;
+  margin-top: 120px;
   background-color: var(--white);
   background-image: url("../../assets/img/herobg.webp");
   background-repeat: no-repeat;

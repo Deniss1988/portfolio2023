@@ -29,11 +29,7 @@
 }
 
 .footer__social a:hover {
-  filter: grayscale(1);
-}
-
-.social {
-  width: 21px;
+  color: var(--secondary);
 }
 
 .instagram {
@@ -47,6 +43,7 @@
 .footer__desktop {
   color: var(--secondary);
   margin-right: 10px;
+  width: 200px;
 }
 
 .footer__mobile {
