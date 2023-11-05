@@ -17,8 +17,9 @@
 }
 
 .button.primary:hover {
-  background-color: var(--tetriary);
-  border: 1px solid var(--white);
+  color: var(--primary);
+  background-color: transparent;
+  border: 1px solid var(--primary);
 }
 
 .button.secondary {
